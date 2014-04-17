@@ -1,0 +1,13 @@
+name: mesh
+authors:
+- Luc Perkins <lucperkins@gmail.com>
+version: 0.1.0
+homepage: https://github.com/lucperkins/mesh
+dependencies:
+  crypto: any
+  exportable: any
+  http: any
+  uri: any
+dev_dependencies:
+  args: any
+  unittest: any
