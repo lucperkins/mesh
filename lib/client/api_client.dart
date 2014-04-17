@@ -1,10 +1,6 @@
-import 'package:http/http.dart' as http;
-import 'dart:async';
-import 'dart:convert';
-import 'package:crypto/crypto.dart';
-import 'converter.dart';
+part of mesh;
 
-class ApiClient<T> {
+class ApiClient {
   // The user must provide these
   String host;
   num apiVersion;
@@ -83,14 +79,8 @@ class ApiClient<T> {
     return _c.future;
   }
 
-  Future<T> getObject() {
-    var _c = new Completer();
-    getRequest().then((String value) {
-      new Converter<T>(getRequest()).convert((http.))
-      _c.complete(t);
-    });
-    return _c.future;
-  }
+  // Get object of type T
+  Future<T> getObject(String path, T type, {String id, Map headers}) {
 
-  Future<List<T>> getList
+  }
 }

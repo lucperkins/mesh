@@ -1,7 +1,4 @@
-import 'dart:async';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-import 'package:exportable/exportable.dart';
+part of mesh;
 
 class Converter<T> {
   Future<T> convert(Future<String> res, {String field}) {
