@@ -78,9 +78,4 @@ class ApiClient {
     });
     return _c.future;
   }
-
-  // Get object of type T
-  Future<T> getObject(String path, T type, {String id, Map headers}) {
-
-  }
 }
