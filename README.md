@@ -69,13 +69,3 @@ fooClient.postRequest('people', body: json).then((String response) {
   ... do something with response ...
 });
 ```
-
-## What's Missing
-
-Right now, things aren't terribly well fleshed out. This library currently lacks:
-
-* Tests
-* HTTP error handling
-* A lot of other things
-
-I'll be putting in a lot of work on this in the coming weeks as part of a larger project. Pull requests very much welcome!
